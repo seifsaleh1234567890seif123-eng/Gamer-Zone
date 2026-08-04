@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <title>Gamer Zone – عالم الألعاب الخيالي</title>
+  <meta name="description" content="Gamer Zone - موقعك الأول لعالم الألعاب. اكتشف أفضل الألعاب بتصميم خيالي وألوان مبهرة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SPLASH SCREEN ===== -->
+  <div id="splash-screen" class="splash">
+    <div class="splash-particles" id="splash-particles"></div>
+    <div class="splash-content">
+      <div class="splash-logo-ring"></div>
+      <div class="splash-logo-ring ring-2"></div>
+      <div class="splash-logo-ring ring-3"></div>
+      <div class="splash-icon">
+        <img src="logo.png" alt="Gamer Zone Logo" class="splash-logo-img" />
+      </div>
+      <h1 class="splash-title">
+        <span class="letter" style="--i:1">E</span>
+        <span class="letter" style="--i:2">N</span>
+        <span class="letter" style="--i:3">O</span>
+        <span class="letter" style="--i:4">Z</span>
+        <span class="space"> </span>
+        <span class="letter" style="--i:5">R</span>
+        <span class="letter" style="--i:6">E</span>
+        <span class="letter" style="--i:7">M</span>
+        <span class="letter" style="--i:8">A</span>
+        <span class="letter" style="--i:9">G</span>
+      </h1>
+      <p class="splash-sub">عالم الألعاب الخيالي</p>
+      <div class="splash-loader">
+        <div class="loader-bar" id="loader-bar"></div>
+      </div>
+      <p class="splash-loading-text">جاري التحميل...</p>
+    </div>
+  </div>
+
+  <!-- ===== MAIN SITE ===== -->
+  <div id="main-site" class="hidden">
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container nav-centered">
+        <a href="#" class="nav-logo" id="nav-logo">
+          <img src="logo.png" alt="Gamer Zone" class="nav-logo-img" />
+          <span class="logo-text">Gamer Zone</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="hero_banner.png" alt="Gamer Zone Hero Banner" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-particles" id="hero-particles"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🔥 الأكثر إثارة</div>
+        <h1 class="hero-title">مرحباً في <span class="gradient-text">Gamer Zone</span></h1>
+        <p class="hero-desc">اكتشف عالماً من الألعاب الخيالية، المغامرات الملحمية، والإثارة اللا نهائية</p>
+
+
+      </div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-icon"></div>
+        <span>اسكرول للأسفل</span>
+      </div>
+    </section>
+
+    <!-- FEATURED SECTION -->
+    <section class="featured-section" id="featured">
+      <div class="section-header">
+        <h2 class="section-title">الألعاب المميزة</h2>
+        <p class="section-desc">أحدث وأضخم الألعاب في عالم الجيمنج</p>
+      </div>
+      <!-- 3العاب مميزه -->
+      <div class="featured-grid">
+        <div class="featured-card main-card" id="card-featured-main">
+          <img src="GTA 6.jpeg" alt="Dragon Quest Fantasy" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">GTA </span>
+              <h3>GTA 6</h3>
+              <p>مغامرة ملحمية لا تنتهي في عالم من التنانين والسحر</p>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.8</span>
+                <span class="players">👥 2M لاعب</span>
+              </div>
+              <button class="btn-play" id="play-fantasy">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <div class="featured-side">
+          <div class="featured-card side-card" id="card-featured-scifi">
+            <img src="Fc27 Standard Edition.jpeg" alt="Space Odyssey" class="featured-img" />
+            <div class="featured-overlay">
+              <div class="featured-info">
+                <span class="game-tag">Fc27</span>
+                <h3>Fc27 Standard Edition</h3>
+                <div class="game-meta">
+                  <span class="rating">⭐ 9.5</span>
+                  <span class="players">👥 1.5M لاعب</span>
+                </div>
+                <button class="btn-play" id="play-scifi">▶ العب الآن</button>
+              </div>
+            </div>
+            <div class="card-glow"></div>
+          </div>
+          <div class="featured-card side-card" id="card-featured-racing">
+            <img src="Fc27 Ultimate Edition.jpeg" alt="Neon Racer" class="featured-img" />
+            <div class="featured-overlay">
+              <div class="featured-info">
+                <span class="game-tag">Fc27</span>
+                <h3>Fc27 Ultimate Edition</h3>
+                <div class="game-meta">
+                  <span class="rating">⭐ 9.2</span>
+                  <span class="players">👥 800K لاعب</span>
+                </div>
+                <button class="btn-play" id="play-racing">▶ العب الآن</button>
+              </div>
+            </div>
+            <div class="card-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAMES GALLERY -->
+    <section class="games-section" id="games">
+      <div class="section-header">
+        <span class="section-tag">🎮 المكتبة</span>
+        <h2 class="section-title">كل الألعاب</h2>
+        <p class="section-desc">استكشف مجموعتنا الضخمة من أفضل الألعاب</p>
+      </div>
+
+
+
+      <div class="games-grid" id="games-grid">
+        <!-- Game 1 -->
+        <div class="featured-card side-card">
+          <img src="gta.jpeg" alt="Dragon's Quest" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">gta</span>
+              <h3>gta</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.8</span>
+                <span class="players">👥 2M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="featured-card side-card">
+          <img src="Back4Blood.jpeg" alt="Space Odyssey X" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Back4Blood</span>
+              <h3>Back4Blood</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.5</span>
+                <span class="players">👥 1.5M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="featured-card side-card">
+          <img src="Ratchet and clank.jpeg" alt="Battle Royale Inferno" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Ratchet and clank</span>
+              <h3>Ratchet and clank</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 8.7</span>
+                <span class="players">👥 900K لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="featured-card side-card">
+          <img src="Saints row.jpeg" alt="Neon Speed Racer" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Saints row</span>
+              <h3>Saints row</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.2</span>
+                <span class="players">👥 800K لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- Game 5 -->
+        <div class="featured-card side-card">
+          <img src="Days Gone.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Days Gone</span>
+              <h3>Days Gone</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 6 -->
+        <div class="featured-card side-card">
+          <img src="MxGp3.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">MxGp3</span>
+              <h3>MxGp3</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 7 -->
+        <div class="featured-card side-card">
+          <img src="Call of duty black ops3.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Call of duty black ops3</span>
+              <h3>Call of duty black ops3</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 8 -->
+        <div class="featured-card side-card">
+          <img src="Call of duty black ops6.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Call of duty black ops6</span>
+              <h3>Call of duty black ops6</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 9 -->
+        <div class="featured-card side-card">
+          <img src="Call of duty vanguard.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Call of duty vanguard</span>
+              <h3>Call of duty vanguard</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 10 -->
+        <div class="featured-card side-card">
+          <img src="Ghost of tsushima.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Ghost of tsushima</span>
+              <h3>Ghost of tsushima</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 35 -->
+        <div class="featured-card side-card">
+          <img src="Ghost Recon Breakpoint.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Ghost</span>
+              <h3>Ghost Recon Breakpoint>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 11 -->
+        <div class="featured-card side-card">
+          <img src="Spider man marvel.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Spider man marvel</span>
+              <h3>Spider man marvel</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 12 -->
+        <div class="featured-card side-card">
+          <img src="Spider man miles.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Spider man miles.jpeg</span>
+              <h3>Spider man miles.jpeg</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 13 -->
+        <div class="featured-card side-card">
+          <img src="spider man2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">spider man2</span>
+              <h3>spider man2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 14 -->
+        <div class="featured-card side-card">
+          <img src="WWE24.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">WWE24</span>
+              <h3>WWE24</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 15 -->
+        <div class="featured-card side-card">
+          <img src="WWE25.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">WWE25</span>
+              <h3>WWE25</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 17 -->
+        <div class="featured-card side-card">
+          <img src="SIFU.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">SIFU</span>
+              <h3>SIFU</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 18 -->
+        <div class="featured-card side-card">
+          <img src="ctr.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Ctr</span>
+              <h3>Ctr</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 19 -->
+        <div class="featured-card side-card">
+          <img src="Crach Rumble.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Crach Rumble</span>
+              <h3>Crach Rumble</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 20 -->
+        <div class="featured-card side-card">
+          <img src="Crash Bandicoot TM - Quadrilogy Bundle.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Crash</span>
+              <h3>Crash Bandicoot TM - Quadrilogy Bundle</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 21 -->
+        <div class="featured-card side-card">
+          <img src="Mortal Kombat 11.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Mortal Kombat 11</span>
+              <h3>Mortal Kombat11</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 22 -->
+        <div class="featured-card side-card">
+          <img src="Mortal Kombat1.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Mortal Kombat1</span>
+              <h3>Mortal Kombat1</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 16 -->
+        <div class="featured-card side-card">
+          <img src="Tekken7.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Tekken7</span>
+              <h3>Tekken7</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 36 -->
+        <div class="featured-card side-card">
+          <img src="Injustice2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Injustice2</span>
+              <h3>Injustice2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 23 -->
+        <div class="featured-card side-card">
+          <img src="Resident Evll7.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Resident Evll7</span>
+              <h3>Resident Evll7</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 24 -->
+        <div class="featured-card side-card">
+          <img src="Away Out.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Away Out</span>
+              <h3>Away Out</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 25 -->
+        <div class="featured-card side-card">
+          <img src="Assassin's Creed Valhalla.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Assassin's Creed Valhalla</span>
+              <h3>Assassin's Creed Valhalla</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 26 -->
+        <div class="featured-card side-card">
+          <img src="Assassin's Creed Mirage.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Assassin's Creed Mirage</span>
+              <h3>Assassin's Creed Mirage</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 27 -->
+        <div class="featured-card side-card">
+          <img src="Assassin's Creed Shadows.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Assassin's Creed Shadows</span>
+              <h3>Assassin's Creed Shadows</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 28 -->
+        <div class="featured-card side-card">
+          <img src="Dirt5.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Dirt5</span>
+              <h3>Dirt5</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 29 -->
+        <div class="featured-card side-card">
+          <img src="NFS Heat.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">NFS Heat</span>
+              <h3>Need for Speed Heat</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 43 -->
+        <div class="featured-card side-card">
+          <img src="NFS Unbound.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">NFS</span>
+              <h3>Need for Speed Unbound</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 30 -->
+        <div class="featured-card side-card">
+          <img src="Need For Speed Payback.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">NFS Payback</span>
+              <h3>Need For Speed Payback</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 31 -->
+        <div class="featured-card side-card">
+          <img src="The Crew Motorfest.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Motorfest</span>
+              <h3>The Crew Motorfest</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 32 -->
+        <div class="featured-card side-card">
+          <img src="Cars 3 Driven to win.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Cars 3</span>
+              <h3>Cars 3 Driven to win</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 33 -->
+        <div class="featured-card side-card">
+          <img src="Taxi Chaos.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Taxi</span>
+              <h3>Taxi Chaos</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 34 -->
+        <div class="featured-card side-card">
+          <img src="Team Sonic Racing.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Sonic</span>
+              <h3>Team Sonic Racing</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 37 -->
+        <div class="featured-card side-card">
+          <img src="Fc24.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Fc</span>
+              <h3>Fc24</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 38 -->
+        <div class="featured-card side-card">
+          <img src="Fc25.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Fc</span>
+              <h3>Fc25</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 39 -->
+        <div class="featured-card side-card">
+          <img src="Fc26.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Fc</span>
+              <h3>Fc26</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 40 -->
+        <div class="featured-card side-card">
+          <img src="God of War.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">God of War</span>
+              <h3>God of War</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 41 -->
+        <div class="featured-card side-card">
+          <img src="God of War Ragnarok.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">God of War</span>
+              <h3>God of War Ragnarok</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 42 -->
+        <div class="featured-card side-card">
+          <img src="Red Dead Redemption2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Red Dead</span>
+              <h3>Red Dead Redemption2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 44 -->
+        <div class="featured-card side-card">
+          <img src="It Takes Two.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">It Takes Two</span>
+              <h3>It Takes Two</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 45 -->
+        <div class="featured-card side-card">
+          <img src="Unravel Two.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Unravel Two</span>
+              <h3>Unravel Two</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 46 -->
+        <div class="featured-card side-card">
+          <img src="uncharted 4 a thief's end.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">uncharted</span>
+              <h3>uncharted 4 a thief's end</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 47 -->
+        <div class="featured-card side-card">
+          <img src="Unchartted The Lost Legacy.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">uncharted</span>
+              <h3>Unchartted The Lost Legacy</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 48 -->
+        <div class="featured-card side-card">
+          <img src="Unchartted Collection.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">uncharted</span>
+              <h3>Unchartted Collection</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 49 -->
+        <div class="featured-card side-card">
+          <img src="Overcooked! + Overcooked!2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Overcooked!</span>
+              <h3>Overcooked! + Overcooked!2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 50 -->
+        <div class="featured-card side-card">
+          <img src="Watch dogs Legion.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Watch dogs</span>
+              <h3>Watch dogs Legion</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 51 -->
+        <div class="featured-card side-card">
+          <img src="Watch dogs2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Watch dogs</span>
+              <h3>Watch dogs2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 52 -->
+        <div class="featured-card side-card">
+          <img src="nba 2k playgrounds 2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">NBA</span>
+              <h3>nba 2k playgrounds 2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 53 -->
+        <div class="featured-card side-card">
+          <img src="NBA 2K26.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">NBA</span>
+              <h3>NBA 2K26</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 54 -->
+        <div class="featured-card side-card">
+          <img src="Tennis World Tour2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Tennis</span>
+              <h3>Tennis World Tour2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 55 -->
+        <div class="featured-card side-card">
+          <img src="Battlefield V.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Battlefield</span>
+              <h3>Battlefield V</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 56 -->
+        <div class="featured-card side-card">
+          <img src="Battlefield 6.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Battlefield </span>
+              <h3>Battlefield 6</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 57 -->
+        <div class="featured-card side-card">
+          <img src="Resident Evll4.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Resident Evll4</span>
+              <h3>Resident Evll4</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 58 -->
+        <div class="featured-card side-card">
+          <img src="Rematch.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Rematch</span>
+              <h3>Rematch</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 59 -->
+        <div class="featured-card side-card">
+          <img src="neighbours from hell.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">neighbours</span>
+              <h3>neighbours from hell</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 60 -->
+        <div class="featured-card side-card">
+          <img src="Sackboy.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Sackboy</span>
+              <h3>Sackboy</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 61 -->
+        <div class="featured-card side-card">
+          <img src="Detroit.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Detroit</span>
+              <h3>Detroit</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 62 -->
+        <div class="featured-card side-card">
+          <img src="UFC 5.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">UFC</span>
+              <h3>UFC 5</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 63 -->
+        <div class="featured-card side-card">
+          <img src="Hogwarts Legacy.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Hogwarts</span>
+              <h3>Hogwarts Legacy</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 64 -->
+        <div class="featured-card side-card">
+          <img src="CyberPunk 2077.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">CyberPunk</span>
+              <h3>CyberPunk 2077</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 65 -->
+        <div class="featured-card side-card">
+          <img src="The last of us 1 Remastered.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">The last of us </span>
+              <h3>The last of us 1 Remastered</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 66 -->
+        <div class="featured-card side-card">
+          <img src="The last of us Part 2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">The last of us </span>
+              <h3>The last of us Part 2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 67 -->
+        <div class="featured-card side-card">
+          <img src="Minecraft.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Minecraft</span>
+              <h3>Minecraft</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 68 -->
+        <div class="featured-card side-card">
+          <img src="Mafia 2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Mafia 2</span>
+              <h3>Mafia 2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 69 -->
+        <div class="featured-card side-card">
+          <img src="Demon's Souls.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Demon's</span>
+              <h3>Demon's Souls</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 70 -->
+        <div class="featured-card side-card">
+          <img src="Sonic Forces.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Sonic</span>
+              <h3>Sonic Forces</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 71 -->
+        <div class="featured-card side-card">
+          <img src="Star Wars Battlefront 2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Star Wars </span>
+              <h3>Star Wars Battlefront 2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 72 -->
+        <div class="featured-card side-card">
+          <img src="The Evil Within 2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">The Evil</span>
+              <h3>The Evil Within 2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Game 73 -->
+        <div class="featured-card side-card">
+          <img src="Alan Wake 2.jpeg" alt="Shadow Realm" class="featured-img" />
+          <div class="featured-overlay">
+            <div class="featured-info">
+              <span class="game-tag">Alan Wake</span>
+              <h3>Alan Wake 2</h3>
+              <div class="game-meta">
+                <span class="rating">⭐ 9.6</span>
+                <span class="players">👥 1.1M لاعب</span>
+              </div>
+              <button class="btn-play">▶ العب الآن</button>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end main-site -->
+
+  <script src="script.js"></script>
+</body>
+</html>
