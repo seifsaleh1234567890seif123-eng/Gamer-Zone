@@ -13,19 +13,19 @@
   const loaderBar = document.getElementById("loader-bar");
 
   let progress = 0;
-  const loadDuration = 3200; // ms
-  const interval = 30;
+  const loadDuration = 2500; // ms - longer elegant intro title presentation
+  const interval = 25;
   const step = (100 / (loadDuration / interval));
 
   createSplashParticles();
 
   const loadingTimer = setInterval(() => {
-    progress = Math.min(progress + step + Math.random() * step * 0.5, 100);
+    progress = Math.min(progress + step + Math.random() * step * 0.4, 100);
     loaderBar.style.width = progress + "%";
 
     if (progress >= 100) {
       clearInterval(loadingTimer);
-      setTimeout(showMainSite, 400);
+      setTimeout(showMainSite, 600);
     }
   }, interval);
 
@@ -36,7 +36,7 @@
       mainSite.classList.remove("hidden");
       document.body.style.overflow = "auto";
       initSite();
-    }, 800);
+    }, 500);
   }
 
   // Prevent scroll during splash
@@ -78,6 +78,16 @@
     initCounters();
     initFilterBar();
     initNavToggle();
+    initScrollHintClick();
+  }
+
+  function initScrollHintClick() {
+    const btn = document.getElementById("scroll-hint-btn");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
   }
 
   /* ======================================
@@ -175,7 +185,8 @@
     revealSelectors.forEach((sel) => {
       document.querySelectorAll(sel).forEach((el, i) => {
         el.classList.add("reveal");
-        el.style.transitionDelay = (i * 0.08) + "s";
+        // Fast grid-based delay (max 0.06s) instead of global cumulative delay
+        el.style.transitionDelay = ((i % 4) * 0.02) + "s";
       });
     });
 
@@ -184,10 +195,11 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.01, rootMargin: "200px 0px" }
     );
 
     document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
